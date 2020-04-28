@@ -272,7 +272,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'outcome_circle', units : 'pix', 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : [300, 300],
+    ori : 0, pos : [0, 0], size : [500, 500],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -2.0 
@@ -314,7 +314,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'counter_square', units : 'pix', 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : [300, 300],
+    ori : 0, pos : [0, 0], size : [500, 500],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -2.0 
