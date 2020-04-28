@@ -101,12 +101,14 @@ var OutcomeClock;
 var reveal;
 var fix5;
 var outcome_circle;
+var tutorial_text1;
 var iti2Clock;
 var fix4;
 var counterfactualClock;
 var reveal2;
 var fix6;
 var counter_square;
+var tutorialtext2;
 var globalClock;
 var routineTimer;
 function experimentInit() {
@@ -277,6 +279,17 @@ function experimentInit() {
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -2.0 
   });
+  tutorial_text1 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'tutorial_text1',
+    text: 'default text',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, 20], height: 0.1,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('black'),  opacity: 1,
+    depth: -3.0 
+  });
+  
   // Initialize components for Routine "iti2"
   iti2Clock = new util.Clock();
   fix4 = new visual.ImageStim({
@@ -319,6 +332,17 @@ function experimentInit() {
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -2.0 
   });
+  tutorialtext2 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'tutorialtext2',
+    text: 'default text',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, 20], height: 0.1,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('black'),  opacity: 1,
+    depth: -3.0 
+  });
+  
   // Create some handy timers
   globalClock = new util.Clock();  // to track the time since experiment started
   routineTimer = new util.CountdownTimer();  // to track time remaining of each (non-slip) routine
@@ -1069,11 +1093,13 @@ function OutcomeRoutineBegin(trials) {
     reveal.setText(option1);
     fix5.setImage(imageFix);
     outcome_circle.setImage(outcome);
+    tutorial_text1.setText(outcometext);
     // keep track of which components have finished
     OutcomeComponents = [];
     OutcomeComponents.push(reveal);
     OutcomeComponents.push(fix5);
     OutcomeComponents.push(outcome_circle);
+    OutcomeComponents.push(tutorial_text1);
     
     for (const thisComponent of OutcomeComponents)
       if ('status' in thisComponent)
@@ -1133,6 +1159,20 @@ function OutcomeRoutineEachFrame(trials) {
     frameRemains = 0.0 + 0.2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (outcome_circle.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       outcome_circle.setAutoDraw(false);
+    }
+    
+    // *tutorial_text1* updates
+    if (t >= 0.0 && tutorial_text1.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      tutorial_text1.tStart = t;  // (not accounting for frame time here)
+      tutorial_text1.frameNStart = frameN;  // exact frame index
+      
+      tutorial_text1.setAutoDraw(true);
+    }
+
+    frameRemains = 0.0 + 0.2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (tutorial_text1.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      tutorial_text1.setAutoDraw(false);
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
@@ -1271,11 +1311,13 @@ function counterfactualRoutineBegin(trials) {
     reveal2.setText(option2);
     fix6.setImage(imageFix);
     counter_square.setImage(counterfactual);
+    tutorialtext2.setText(counterfactualtext);
     // keep track of which components have finished
     counterfactualComponents = [];
     counterfactualComponents.push(reveal2);
     counterfactualComponents.push(fix6);
     counterfactualComponents.push(counter_square);
+    counterfactualComponents.push(tutorialtext2);
     
     for (const thisComponent of counterfactualComponents)
       if ('status' in thisComponent)
@@ -1335,6 +1377,20 @@ function counterfactualRoutineEachFrame(trials) {
     frameRemains = 0.0 + 0.2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (counter_square.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       counter_square.setAutoDraw(false);
+    }
+    
+    // *tutorialtext2* updates
+    if (t >= 0.0 && tutorialtext2.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      tutorialtext2.tStart = t;  // (not accounting for frame time here)
+      tutorialtext2.frameNStart = frameN;  // exact frame index
+      
+      tutorialtext2.setAutoDraw(true);
+    }
+
+    frameRemains = 0.0 + 0.2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (tutorialtext2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      tutorialtext2.setAutoDraw(false);
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
