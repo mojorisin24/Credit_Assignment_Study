@@ -39,6 +39,9 @@ const practiceLoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(practiceLoopBegin, practiceLoopScheduler);
 flowScheduler.add(practiceLoopScheduler);
 flowScheduler.add(practiceLoopEnd);
+flowScheduler.add(practice_endRoutineBegin());
+flowScheduler.add(practice_endRoutineEachFrame());
+flowScheduler.add(practice_endRoutineEnd());
 flowScheduler.add(quitPsychoJS, '', true);
 
 // quit if user presses Cancel in dialog box:
@@ -101,6 +104,8 @@ var reveal2;
 var tutorialtext2;
 var fix6;
 var counter_square;
+var practice_endClock;
+var text;
 var globalClock;
 var routineTimer;
 function experimentInit() {
@@ -259,7 +264,7 @@ function experimentInit() {
     text: 'default text',
     font: 'Arial',
     units: undefined, 
-    pos: [0, 90], height: 0.1,  wrapWidth: undefined, ori: 0,
+    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0,
     color: new util.Color('black'),  opacity: 1,
     depth: -1.0 
   });
@@ -335,6 +340,19 @@ function experimentInit() {
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -3.0 
   });
+  // Initialize components for Routine "practice_end"
+  practice_endClock = new util.Clock();
+  text = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text',
+    text: 'This concludes the practice. Press the spacebar when ready to continue to the actual trials. ',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: 0.0 
+  });
+  
   // Create some handy timers
   globalClock = new util.Clock();  // to track the time since experiment started
   routineTimer = new util.CountdownTimer();  // to track time remaining of each (non-slip) routine
@@ -1425,6 +1443,91 @@ function counterfactualRoutineEnd(trials) {
   return function () {
     //------Ending Routine 'counterfactual'-------
     counterfactualComponents.forEach( function(thisComponent) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    });
+    return Scheduler.Event.NEXT;
+  };
+}
+
+
+var practice_endComponents;
+function practice_endRoutineBegin(trials) {
+  return function () {
+    //------Prepare to start Routine 'practice_end'-------
+    t = 0;
+    practice_endClock.reset(); // clock
+    frameN = -1;
+    routineTimer.add(1.000000);
+    // update component parameters for each repeat
+    // keep track of which components have finished
+    practice_endComponents = [];
+    practice_endComponents.push(text);
+    
+    practice_endComponents.forEach( function(thisComponent) {
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+       });
+    
+    return Scheduler.Event.NEXT;
+  };
+}
+
+
+function practice_endRoutineEachFrame(trials) {
+  return function () {
+    //------Loop for each frame of Routine 'practice_end'-------
+    let continueRoutine = true; // until we're told otherwise
+    // get current time
+    t = practice_endClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *text* updates
+    if (t >= 0.0 && text.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text.tStart = t;  // (not accounting for frame time here)
+      text.frameNStart = frameN;  // exact frame index
+      
+      text.setAutoDraw(true);
+    }
+
+    frameRemains = 0.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (text.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      text.setAutoDraw(false);
+    }
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    practice_endComponents.forEach( function(thisComponent) {
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+      }
+    });
+    
+    // refresh the screen if continuing
+    if (continueRoutine && routineTimer.getTime() > 0) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function practice_endRoutineEnd(trials) {
+  return function () {
+    //------Ending Routine 'practice_end'-------
+    practice_endComponents.forEach( function(thisComponent) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
