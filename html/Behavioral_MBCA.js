@@ -124,10 +124,10 @@ function experimentInit() {
   Ins = new visual.TextStim({
     win: psychoJS.window,
     name: 'Ins',
-    text: "Hello, in this task you will be presented with two separate stimuli a face and a house. You will see numbers overlayed on these images that stand for a number of points you can gamble for. Each image will have an independent probability of leading to that amount of reward. Once you see the choose screen, you will indicate which image you'd like to gamble for with the left and right arrow key. Press left for face and right for house. Based on the number of points you get at the end you will receive a cash payout! To start we will first be performing a few practice rounds. When you're ready press the spacebar to continue. ",
+    text: "Hello, in this task you will be presented with two separate images of a face and a house. You will see points overalayed on these images that you can gamble for. Each image will have an independent probability of leading to that amount of reward. Once you see the choose screen, you will indicate which image you'd like to gamble for with the left and right arrow key. Press left for face and right for house. Based on the number of points you get at the end you will receive a cash payout! To start we will first be performing a few practice rounds. When you're ready press the spacebar to continue. ",
     font: 'Arial',
     units: undefined, 
-    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
+    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
     color: new util.Color('black'),  opacity: 1,
     depth: -1.0 
   });
