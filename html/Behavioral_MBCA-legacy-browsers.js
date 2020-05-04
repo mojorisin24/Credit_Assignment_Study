@@ -913,7 +913,7 @@ function message_loopLoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   message_loop = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: $nReps, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: numReps, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: undefined,
     seed: undefined, name: 'message_loop'
@@ -948,7 +948,7 @@ function practice_timeoutLoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   practice_timeout = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: $nReps2, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: numReps2, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: undefined,
     seed: undefined, name: 'practice_timeout'
@@ -1050,7 +1050,7 @@ function timeout_msg_loopLoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   timeout_msg_loop = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: $nReps, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: numReps, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: undefined,
     seed: undefined, name: 'timeout_msg_loop'
@@ -1085,7 +1085,7 @@ function timeoutLoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   timeout = new TrialHandler({
     psychoJS: psychoJS,
-    nReps: $nReps2, method: TrialHandler.Method.SEQUENTIAL,
+    nReps: numReps2, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: undefined,
     seed: undefined, name: 'timeout'
@@ -1542,8 +1542,8 @@ function stim_presentation2RoutineEnd(trials) {
 
 
 var _key_resp_2_allKeys;
-var nReps;
-var nReps2;
+var numReps;
+var numReps2;
 var choiceComponents;
 function choiceRoutineBegin(trials) {
   return function () {
@@ -1557,8 +1557,8 @@ function choiceRoutineBegin(trials) {
     key_resp_2.keys = undefined;
     key_resp_2.rt = undefined;
     _key_resp_2_allKeys = [];
-    nReps = 0;
-    nReps2 = 1;
+    numReps = 0;
+    numReps2 = 1;
     
     // keep track of which components have finished
     choiceComponents = [];
@@ -1700,8 +1700,8 @@ function choiceRoutineEnd(trials) {
     
     key_resp_2.stop();
     if ((! key_resp_2.keys)) {
-        nReps = 1;
-        nReps2 = 0;
+        numReps = 1;
+        numReps2 = 0;
     }
     
     return Scheduler.Event.NEXT;

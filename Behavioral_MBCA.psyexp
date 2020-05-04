@@ -281,15 +281,15 @@
       <CodeComponent name="timeout_code">
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="nReps = 0;&amp;#10;nReps2 = 1;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="nReps = 0 &amp;#10;nReps2 = 1" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="numReps = 0;&amp;#10;numReps2 = 1;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="numReps = 0 &amp;#10;numReps2 = 1" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="if ((! key_resp_2.keys)) {&amp;#10;    nReps = 1;&amp;#10;    nReps2 = 0;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if not key_resp_2.keys:&amp;#10;    nReps = 1 &amp;#10;    nReps2 = 0" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if ((! key_resp_2.keys)) {&amp;#10;    numReps = 1;&amp;#10;    numReps2 = 0;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if not key_resp_2.keys:&amp;#10;    numReps = 1 &amp;#10;    numReps2 = 0" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="timeout_code" valType="code"/>
       </CodeComponent>
@@ -955,7 +955,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="$nReps" valType="code"/>
+      <Param name="nReps" updates="None" val="numReps" valType="code"/>
       <Param name="name" updates="None" val="message_loop" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -968,7 +968,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="$nReps2" valType="code"/>
+      <Param name="nReps" updates="None" val="numReps2" valType="code"/>
       <Param name="name" updates="None" val="practice_timeout" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -1004,7 +1004,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="$nReps" valType="code"/>
+      <Param name="nReps" updates="None" val="numReps" valType="code"/>
       <Param name="name" updates="None" val="timeout_msg_loop" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -1017,7 +1017,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="$nReps2" valType="code"/>
+      <Param name="nReps" updates="None" val="numReps2" valType="code"/>
       <Param name="name" updates="None" val="timeout" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
