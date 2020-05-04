@@ -279,10 +279,10 @@
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
       <CodeComponent name="timeout_code">
-        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="nReps = 0;&amp;#10;nReps2 = 1;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="nReps = 0 &amp;#10;nReps2 = 1" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="nReps = 0 &amp;#10;nReps2 = 1" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="nReps = 0;&amp;#10;nReps2 = 1;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
