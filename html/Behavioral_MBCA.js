@@ -1911,11 +1911,11 @@ function OutcomeRoutineBegin(trials) {
     if (key_resp_2.corr) {
         msg = outcome_msg_optimal;
         msgColor = "black";
-        points_this_round = (points_this_round + point_earned_optimal);
+        points_this_round = point_earned_optimal;
     } else {
         msg = outcome_msg_alt;
         msgColor = "black";
-        points_this_round = (points_this_round + point_earned_alt);
+        points_this_round = point_earned_alt;
     }
     
     feedbacktext.setColor(new util.Color(msgColor));

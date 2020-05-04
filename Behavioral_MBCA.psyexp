@@ -6,7 +6,7 @@
     <Param name="Completed URL" updates="None" val="" valType="str"/>
     <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
     <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
-    <Param name="Experiment info" updates="None" val="{'participant':'', 'session':'001'}" valType="code"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'age': '', 'biological sex (m/f/i)': '', 'handedness (l/r)': ''}" valType="code"/>
     <Param name="Force stereo" updates="None" val="True" valType="bool"/>
     <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
     <Param name="HTML path" updates="None" val="html" valType="str"/>
@@ -22,7 +22,7 @@
     <Param name="Show mouse" updates="None" val="False" valType="bool"/>
     <Param name="Units" updates="None" val="height" valType="str"/>
     <Param name="Use version" updates="None" val="" valType="str"/>
-    <Param name="Window size (pixels)" updates="None" val="(1024, 768)" valType="code"/>
+    <Param name="Window size (pixels)" updates="None" val="[1920, 1080]" valType="code"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
@@ -399,8 +399,8 @@
       <CodeComponent name="setMsg">
         <Param name="Begin Experiment" updates="constant" val="points_this_round = 0 &amp;#10;points_total = 0 " valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="points_this_round = 0;&amp;#10;points_total = 0;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="if (key_resp_2.corr) {&amp;#10;    msg = outcome_msg_optimal;&amp;#10;    msgColor = &quot;black&quot;;&amp;#10;    points_this_round = (points_this_round + point_earned_optimal);&amp;#10;} else {&amp;#10;    msg = outcome_msg_alt;&amp;#10;    msgColor = &quot;black&quot;;&amp;#10;    points_this_round = (points_this_round + point_earned_alt);&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="if key_resp_2.corr:&amp;#10;    msg= outcome_msg_optimal&amp;#10;    msgColor='black'&amp;#10;    points_this_round=points_this_round + point_earned_optimal&amp;#10;else:&amp;#10;    msg= outcome_msg_alt&amp;#10;    msgColor='black'&amp;#10;    points_this_round=points_this_round + point_earned_alt" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (key_resp_2.corr) {&amp;#10;    msg = outcome_msg_optimal;&amp;#10;    msgColor = &quot;black&quot;;&amp;#10;    points_this_round = point_earned_optimal;&amp;#10;} else {&amp;#10;    msg = outcome_msg_alt;&amp;#10;    msgColor = &quot;black&quot;;&amp;#10;    points_this_round = point_earned_alt;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if key_resp_2.corr:&amp;#10;    msg= outcome_msg_optimal&amp;#10;    msgColor='black'&amp;#10;    points_this_round= point_earned_optimal&amp;#10;else:&amp;#10;    msg= outcome_msg_alt&amp;#10;    msgColor='black'&amp;#10;    points_this_round= point_earned_alt" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
