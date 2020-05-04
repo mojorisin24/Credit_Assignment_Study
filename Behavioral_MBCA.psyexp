@@ -1006,8 +1006,8 @@
       <CodeComponent name="setMsg_2">
         <Param name="Begin Experiment" updates="constant" val="points_this_round = 0 &amp;#10;points_total = 0 " valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="points_this_round = 0;&amp;#10;points_total = 0;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="if (key_resp_2.corr) {&amp;#10;    points_this_round = point_earned_optimal;&amp;#10;} else {&amp;#10;    points_this_round = point_earned_alt;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="if key_resp_2.corr:&amp;#10;    points_this_round=point_earned_optimal&amp;#10;else:&amp;#10;    points_this_round=point_earned_alt" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (key_resp_2.corr) {&amp;#10;    msg = outcome_msg_optimal;&amp;#10;    msgColor = &quot;black&quot;;&amp;#10;    points_this_round = point_earned_optimal;&amp;#10;} else {&amp;#10;    msg = outcome_msg_alt;&amp;#10;    msgColor = &quot;black&quot;;&amp;#10;    points_this_round = point_earned_alt;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if key_resp_2.corr:&amp;#10;    msg= outcome_msg_optimal&amp;#10;    msgColor='black'&amp;#10;    points_this_round= point_earned_optimal&amp;#10;else:&amp;#10;    msg= outcome_msg_alt&amp;#10;    msgColor='black'&amp;#10;    points_this_round= point_earned_alt" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>

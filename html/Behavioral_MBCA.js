@@ -2460,8 +2460,12 @@ function Outcome_expRoutineBegin(trials) {
     fix5_2.setImage(imageFix);
     outcome_circle_2.setImage(outcome);
     if (key_resp_2.corr) {
+        msg = outcome_msg_optimal;
+        msgColor = "black";
         points_this_round = point_earned_optimal;
     } else {
+        msg = outcome_msg_alt;
+        msgColor = "black";
         points_this_round = point_earned_alt;
     }
     
