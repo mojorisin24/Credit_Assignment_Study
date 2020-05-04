@@ -1,0 +1,996 @@
+1.3353 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'pyo', 'pygame'] (in that order).
+7.7466 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+8.8117 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000021A7CE3B8D0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000021A7CC4D8D0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.8117 	EXP 	window1: recordFrameIntervals = False
+8.9783 	EXP 	window1: recordFrameIntervals = True
+9.1627 	EXP 	window1: recordFrameIntervals = False
+9.3437 	EXP 	Created Ins = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='Ins', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.3459 	EXP 	Created fix4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.3475 	EXP 	Created stim1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='stim1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([400., 400.]), texRes=128, units='pix', win=Window(...))
+9.3488 	EXP 	Created fix = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.3687 	EXP 	Created prob1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='prob1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.3702 	EXP 	Created jitter1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='jitter1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.3717 	EXP 	Created stim2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='stim2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([400., 400.]), texRes=128, units='pix', win=Window(...))
+9.3732 	EXP 	Created fix2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.3753 	EXP 	Created prob2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='prob2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.3766 	EXP 	Created jitter1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='jitter1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.3861 	EXP 	Created Choice = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Choice', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Choose', units='height', win=Window(...), wrapWidth=1)
+9.4133 	EXP 	Created timeout_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='timeout_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.4148 	EXP 	Created fix3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.4177 	EXP 	Created reveal = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='reveal', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.4193 	EXP 	Created fix5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.4205 	EXP 	Created outcome_circle = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='outcome_circle', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1280.,  720.]), texRes=128, units='pix', win=Window(...))
+9.4256 	EXP 	Created feedbacktext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='feedbacktext', opacity=1.0, ori=0, pos=array([0. , 0.4]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.4272 	EXP 	Created fix4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.4293 	EXP 	Created reveal2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='reveal2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.4306 	EXP 	Created fix6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.4322 	EXP 	Created counter_square = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='counter_square', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1280.,  720.]), texRes=128, units='pix', win=Window(...))
+9.4348 	EXP 	Created feedbacktext_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='feedbacktext_2', opacity=1.0, ori=0, pos=array([0. , 0.4]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.4396 	EXP 	Created practice_finish = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='practice_finish', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.4418 	EXP 	Created total_points_earned = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='total_points_earned', opacity=1.0, ori=0, pos=array([0. , 0.3]), rgb=array([0., 0., 0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.4488 	EXP 	Created points_earned = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='points_earned', opacity=1.0, ori=0, pos=array([0.  , 0.35]), rgb=array([0., 0., 0.]), text='Total Points Earned During Practice:  ', units='height', win=Window(...), wrapWidth=1)
+9.4724 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.4739 	EXP 	Created fix4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.4752 	EXP 	Created stim1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='stim1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([400., 400.]), texRes=128, units='pix', win=Window(...))
+9.4765 	EXP 	Created fix = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.4787 	EXP 	Created prob1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='prob1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.4800 	EXP 	Created jitter1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='jitter1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.4813 	EXP 	Created stim2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='stim2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([400., 400.]), texRes=128, units='pix', win=Window(...))
+9.4830 	EXP 	Created fix2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.4854 	EXP 	Created prob2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='prob2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.4868 	EXP 	Created jitter1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='jitter1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.4895 	EXP 	Created Choice = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Choice', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='Choose', units='height', win=Window(...), wrapWidth=1)
+9.4960 	EXP 	Created timeout_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='timeout_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.4975 	EXP 	Created fix3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.4999 	EXP 	Created reveal = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='reveal', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.5012 	EXP 	Created fix5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix5', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.5023 	EXP 	Created outcome_circle = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='outcome_circle', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1280.,  720.]), texRes=128, units='pix', win=Window(...))
+9.5049 	EXP 	Created feedbacktext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='feedbacktext', opacity=1.0, ori=0, pos=array([0. , 0.4]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.5066 	EXP 	Created fix4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.5090 	EXP 	Created reveal2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='reveal2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.5105 	EXP 	Created fix6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='fix6', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([25., 25.]), texRes=128, units='pix', win=Window(...))
+9.5116 	EXP 	Created counter_square = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='counter_square', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1280.,  720.]), texRes=128, units='pix', win=Window(...))
+9.5141 	EXP 	Created feedbacktext_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='feedbacktext_2', opacity=1.0, ori=0, pos=array([0. , 0.4]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+9.5202 	EXP 	Created Block_Finish = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Block_Finish', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.5236 	EXP 	Created block1_points = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='block1_points', opacity=1.0, ori=0, pos=array([0. , 0.3]), rgb=array([0., 0., 0.]), text='0', units='height', win=Window(...), wrapWidth=1)
+9.5294 	EXP 	Created block1_points_earned = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='block1_points_earned', opacity=1.0, ori=0, pos=array([0.  , 0.35]), rgb=array([0., 0., 0.]), text='Total Points Earned During Block 1:  ', units='height', win=Window(...), wrapWidth=1)
+9.5617 	EXP 	Ins: autoDraw = True
+10.1017 	DATA 	Keypress: space
+10.1770 	EXP 	Imported practice.csv as conditions, 8 conditions, 14 params
+10.1774 	EXP 	Created sequence: sequential, trialTypes=8, nReps=1, seed=None
+10.1781 	EXP 	New trial (rep=0, index=0): OrderedDict([('imageFile', 'stimuli/Face1.jpg'), ('imageFile2', 'stimuli/house1.png'), ('imageFix', 'stimuli/Fixation.png'), ('option1', 15), ('option2', 35), ('outcome', 'stimuli/green_circle.PNG'), ('counterfactual', 'stimuli/red_square.PNG'), ('corr', 'left'), ('point_earned_optimal', 15), ('point_earned_alt', 0), ('outcome_msg_optimal', 'You won!'), ('outcome_msg_alt', 'You would have won!'), ('counterfactual_msg_optimal', 'You would have lost!'), ('counterfactual_msg_alt', 'You lost!')])
+10.1958 	EXP 	Ins: autoDraw = False
+10.1958 	EXP 	fix4: image = 'stimuli/Fixation.png'
+10.1958 	EXP 	fix4: autoDraw = True
+11.6806 	EXP 	fix4: autoDraw = False
+11.6806 	EXP 	stim1: image = 'stimuli/Face1.jpg'
+11.6806 	EXP 	fix: image = 'stimuli/Fixation.png'
+11.6806 	EXP 	prob1: text = 15
+11.6806 	EXP 	stim1: autoDraw = True
+11.6806 	EXP 	fix: autoDraw = True
+11.6806 	EXP 	prob1: autoDraw = True
+11.8478 	EXP 	stim1: autoDraw = False
+11.8478 	EXP 	fix: autoDraw = False
+11.8478 	EXP 	prob1: autoDraw = False
+11.8478 	EXP 	jitter1: pos = array([0., 0.])
+11.8478 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+11.8478 	EXP 	jitter1: autoDraw = True
+12.8818 	EXP 	jitter1: autoDraw = False
+12.8818 	EXP 	stim2: image = 'stimuli/house1.png'
+12.8818 	EXP 	fix2: image = 'stimuli/Fixation.png'
+12.8818 	EXP 	prob2: text = 35
+12.8818 	EXP 	stim2: autoDraw = True
+12.8818 	EXP 	fix2: autoDraw = True
+12.8818 	EXP 	prob2: autoDraw = True
+13.0487 	EXP 	stim2: autoDraw = False
+13.0487 	EXP 	fix2: autoDraw = False
+13.0487 	EXP 	prob2: autoDraw = False
+13.0487 	EXP 	jitter1: pos = array([0., 0.])
+13.0487 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+13.0487 	EXP 	jitter1: autoDraw = True
+14.0338 	EXP 	jitter1: autoDraw = False
+14.0338 	EXP 	Choice: autoDraw = True
+14.4063 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+14.4067 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+14.4070 	EXP 	New trial (rep=0, index=0): None
+14.4126 	DATA 	Keypress: left
+14.4166 	EXP 	Choice: autoDraw = False
+14.4166 	EXP 	fix3: image = 'stimuli/Fixation.png'
+14.4166 	EXP 	fix3: autoDraw = True
+15.4676 	EXP 	fix3: autoDraw = False
+15.4676 	EXP 	fix3: autoDraw = False
+15.4676 	EXP 	reveal: text = 15
+15.4676 	EXP 	fix5: image = 'stimuli/Fixation.png'
+15.4676 	EXP 	outcome_circle: image = 'stimuli/green_circle.PNG'
+15.4676 	EXP 	feedbacktext: color = 'black (named)'
+15.4676 	EXP 	feedbacktext: text = 'You won!'
+15.4676 	EXP 	reveal: autoDraw = True
+15.4676 	EXP 	fix5: autoDraw = True
+15.4676 	EXP 	outcome_circle: autoDraw = True
+15.4676 	EXP 	feedbacktext: autoDraw = True
+15.7685 	EXP 	reveal: autoDraw = False
+15.7685 	EXP 	fix5: autoDraw = False
+15.7685 	EXP 	outcome_circle: autoDraw = False
+15.7685 	EXP 	feedbacktext: autoDraw = False
+15.7685 	EXP 	reveal: autoDraw = False
+15.7685 	EXP 	fix5: autoDraw = False
+15.7685 	EXP 	outcome_circle: autoDraw = False
+15.7685 	EXP 	feedbacktext: autoDraw = False
+15.7685 	EXP 	fix4: image = 'stimuli/Fixation.png'
+15.7685 	EXP 	fix4: autoDraw = True
+17.3205 	EXP 	fix4: autoDraw = False
+17.3205 	EXP 	fix4: autoDraw = False
+17.3205 	EXP 	reveal2: text = 35
+17.3205 	EXP 	fix6: image = 'stimuli/Fixation.png'
+17.3205 	EXP 	counter_square: image = 'stimuli/red_square.PNG'
+17.3205 	EXP 	feedbacktext_2: color = 'black (named)'
+17.3205 	EXP 	feedbacktext_2: text = 'You would have lost!'
+17.3205 	EXP 	reveal2: autoDraw = True
+17.3205 	EXP 	fix6: autoDraw = True
+17.3205 	EXP 	counter_square: autoDraw = True
+17.3205 	EXP 	feedbacktext_2: autoDraw = True
+17.6080 	EXP 	New trial (rep=0, index=1): OrderedDict([('imageFile', 'stimuli/house1.png'), ('imageFile2', 'stimuli/Face1.jpg'), ('imageFix', 'stimuli/Fixation.png'), ('option1', 25), ('option2', 55), ('outcome', 'stimuli/red_circle.PNG'), ('counterfactual', 'stimuli/green_square.PNG'), ('corr', 'right'), ('point_earned_optimal', 55), ('point_earned_alt', 0), ('outcome_msg_optimal', 'You would have lost! '), ('outcome_msg_alt', 'You lost! '), ('counterfactual_msg_optimal', 'You won! '), ('counterfactual_msg_alt', 'You would have won! ')])
+17.6199 	EXP 	reveal2: autoDraw = False
+17.6199 	EXP 	fix6: autoDraw = False
+17.6199 	EXP 	counter_square: autoDraw = False
+17.6199 	EXP 	feedbacktext_2: autoDraw = False
+17.6199 	EXP 	reveal2: autoDraw = False
+17.6199 	EXP 	fix6: autoDraw = False
+17.6199 	EXP 	counter_square: autoDraw = False
+17.6199 	EXP 	feedbacktext_2: autoDraw = False
+17.6199 	EXP 	fix4: image = 'stimuli/Fixation.png'
+17.6199 	EXP 	fix4: autoDraw = True
+19.1551 	EXP 	fix4: autoDraw = False
+19.1551 	EXP 	fix4: autoDraw = False
+19.1551 	EXP 	stim1: image = 'stimuli/house1.png'
+19.1551 	EXP 	fix: image = 'stimuli/Fixation.png'
+19.1551 	EXP 	prob1: text = 25
+19.1551 	EXP 	stim1: autoDraw = True
+19.1551 	EXP 	fix: autoDraw = True
+19.1551 	EXP 	prob1: autoDraw = True
+19.3558 	EXP 	stim1: autoDraw = False
+19.3558 	EXP 	fix: autoDraw = False
+19.3558 	EXP 	prob1: autoDraw = False
+19.3558 	EXP 	stim1: autoDraw = False
+19.3558 	EXP 	fix: autoDraw = False
+19.3558 	EXP 	prob1: autoDraw = False
+19.3558 	EXP 	jitter1: pos = array([0., 0.])
+19.3558 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+19.3558 	EXP 	jitter1: autoDraw = True
+20.3727 	EXP 	jitter1: autoDraw = False
+20.3727 	EXP 	jitter1: autoDraw = False
+20.3727 	EXP 	stim2: image = 'stimuli/Face1.jpg'
+20.3727 	EXP 	fix2: image = 'stimuli/Fixation.png'
+20.3727 	EXP 	prob2: text = 55
+20.3727 	EXP 	stim2: autoDraw = True
+20.3727 	EXP 	fix2: autoDraw = True
+20.3727 	EXP 	prob2: autoDraw = True
+20.5729 	EXP 	stim2: autoDraw = False
+20.5729 	EXP 	fix2: autoDraw = False
+20.5729 	EXP 	prob2: autoDraw = False
+20.5729 	EXP 	stim2: autoDraw = False
+20.5729 	EXP 	fix2: autoDraw = False
+20.5729 	EXP 	prob2: autoDraw = False
+20.5729 	EXP 	jitter1: pos = array([0., 0.])
+20.5729 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+20.5729 	EXP 	jitter1: autoDraw = True
+21.5739 	EXP 	jitter1: autoDraw = False
+21.5739 	EXP 	jitter1: autoDraw = False
+21.5739 	EXP 	Choice: autoDraw = True
+22.0459 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+22.0463 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+22.0466 	EXP 	New trial (rep=0, index=0): None
+22.0505 	DATA 	Keypress: right
+22.0577 	EXP 	Choice: autoDraw = False
+22.0577 	EXP 	fix3: image = 'stimuli/Fixation.png'
+22.0577 	EXP 	fix3: autoDraw = True
+23.1092 	EXP 	fix3: autoDraw = False
+23.1092 	EXP 	fix3: autoDraw = False
+23.1092 	EXP 	reveal: text = 25
+23.1092 	EXP 	fix5: image = 'stimuli/Fixation.png'
+23.1092 	EXP 	outcome_circle: image = 'stimuli/red_circle.PNG'
+23.1092 	EXP 	feedbacktext: color = 'black (named)'
+23.1092 	EXP 	feedbacktext: text = 'You would have lost! '
+23.1092 	EXP 	reveal: autoDraw = True
+23.1092 	EXP 	fix5: autoDraw = True
+23.1092 	EXP 	outcome_circle: autoDraw = True
+23.1092 	EXP 	feedbacktext: autoDraw = True
+23.4092 	EXP 	reveal: autoDraw = False
+23.4092 	EXP 	fix5: autoDraw = False
+23.4092 	EXP 	outcome_circle: autoDraw = False
+23.4092 	EXP 	feedbacktext: autoDraw = False
+23.4092 	EXP 	reveal: autoDraw = False
+23.4092 	EXP 	fix5: autoDraw = False
+23.4092 	EXP 	outcome_circle: autoDraw = False
+23.4092 	EXP 	feedbacktext: autoDraw = False
+23.4092 	EXP 	fix4: image = 'stimuli/Fixation.png'
+23.4092 	EXP 	fix4: autoDraw = True
+24.9606 	EXP 	fix4: autoDraw = False
+24.9606 	EXP 	fix4: autoDraw = False
+24.9606 	EXP 	reveal2: text = 55
+24.9606 	EXP 	fix6: image = 'stimuli/Fixation.png'
+24.9606 	EXP 	counter_square: image = 'stimuli/green_square.PNG'
+24.9606 	EXP 	feedbacktext_2: color = 'black (named)'
+24.9606 	EXP 	feedbacktext_2: text = 'You won! '
+24.9606 	EXP 	reveal2: autoDraw = True
+24.9606 	EXP 	fix6: autoDraw = True
+24.9606 	EXP 	counter_square: autoDraw = True
+24.9606 	EXP 	feedbacktext_2: autoDraw = True
+25.2486 	EXP 	New trial (rep=0, index=2): OrderedDict([('imageFile', 'stimuli/Face1.jpg'), ('imageFile2', 'stimuli/house1.png'), ('imageFix', 'stimuli/Fixation.png'), ('option1', 55), ('option2', 10), ('outcome', 'stimuli/green_circle.PNG'), ('counterfactual', 'stimuli/green_square.PNG'), ('corr', 'left'), ('point_earned_optimal', 55), ('point_earned_alt', 10), ('outcome_msg_optimal', 'You won! '), ('outcome_msg_alt', 'You would have won!'), ('counterfactual_msg_optimal', 'You would have won! '), ('counterfactual_msg_alt', 'You won! ')])
+25.2610 	EXP 	reveal2: autoDraw = False
+25.2610 	EXP 	fix6: autoDraw = False
+25.2610 	EXP 	counter_square: autoDraw = False
+25.2610 	EXP 	feedbacktext_2: autoDraw = False
+25.2610 	EXP 	reveal2: autoDraw = False
+25.2610 	EXP 	fix6: autoDraw = False
+25.2610 	EXP 	counter_square: autoDraw = False
+25.2610 	EXP 	feedbacktext_2: autoDraw = False
+25.2610 	EXP 	fix4: image = 'stimuli/Fixation.png'
+25.2610 	EXP 	fix4: autoDraw = True
+26.7795 	EXP 	fix4: autoDraw = False
+26.7795 	EXP 	fix4: autoDraw = False
+26.7795 	EXP 	stim1: image = 'stimuli/Face1.jpg'
+26.7795 	EXP 	fix: image = 'stimuli/Fixation.png'
+26.7795 	EXP 	prob1: text = 55
+26.7795 	EXP 	stim1: autoDraw = True
+26.7795 	EXP 	fix: autoDraw = True
+26.7795 	EXP 	prob1: autoDraw = True
+26.9797 	EXP 	stim1: autoDraw = False
+26.9797 	EXP 	fix: autoDraw = False
+26.9797 	EXP 	prob1: autoDraw = False
+26.9797 	EXP 	stim1: autoDraw = False
+26.9797 	EXP 	fix: autoDraw = False
+26.9797 	EXP 	prob1: autoDraw = False
+26.9797 	EXP 	jitter1: pos = array([0., 0.])
+26.9797 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+26.9797 	EXP 	jitter1: autoDraw = True
+28.0143 	EXP 	jitter1: autoDraw = False
+28.0143 	EXP 	jitter1: autoDraw = False
+28.0143 	EXP 	stim2: image = 'stimuli/house1.png'
+28.0143 	EXP 	fix2: image = 'stimuli/Fixation.png'
+28.0143 	EXP 	prob2: text = 10
+28.0143 	EXP 	stim2: autoDraw = True
+28.0143 	EXP 	fix2: autoDraw = True
+28.0143 	EXP 	prob2: autoDraw = True
+28.2139 	EXP 	stim2: autoDraw = False
+28.2139 	EXP 	fix2: autoDraw = False
+28.2139 	EXP 	prob2: autoDraw = False
+28.2139 	EXP 	stim2: autoDraw = False
+28.2139 	EXP 	fix2: autoDraw = False
+28.2139 	EXP 	prob2: autoDraw = False
+28.2139 	EXP 	jitter1: pos = array([0., 0.])
+28.2139 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+28.2139 	EXP 	jitter1: autoDraw = True
+29.2149 	EXP 	jitter1: autoDraw = False
+29.2149 	EXP 	jitter1: autoDraw = False
+29.2149 	EXP 	Choice: autoDraw = True
+30.5718 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+30.5722 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+30.5725 	EXP 	New trial (rep=0, index=0): None
+30.5763 	DATA 	Keypress: left
+30.5830 	EXP 	Choice: autoDraw = False
+30.5830 	EXP 	fix3: image = 'stimuli/Fixation.png'
+30.5830 	EXP 	fix3: autoDraw = True
+31.6341 	EXP 	fix3: autoDraw = False
+31.6341 	EXP 	fix3: autoDraw = False
+31.6341 	EXP 	reveal: text = 55
+31.6341 	EXP 	fix5: image = 'stimuli/Fixation.png'
+31.6341 	EXP 	outcome_circle: image = 'stimuli/green_circle.PNG'
+31.6341 	EXP 	feedbacktext: color = 'black (named)'
+31.6341 	EXP 	feedbacktext: text = 'You won! '
+31.6341 	EXP 	reveal: autoDraw = True
+31.6341 	EXP 	fix5: autoDraw = True
+31.6341 	EXP 	outcome_circle: autoDraw = True
+31.6341 	EXP 	feedbacktext: autoDraw = True
+31.9343 	EXP 	reveal: autoDraw = False
+31.9343 	EXP 	fix5: autoDraw = False
+31.9343 	EXP 	outcome_circle: autoDraw = False
+31.9343 	EXP 	feedbacktext: autoDraw = False
+31.9343 	EXP 	reveal: autoDraw = False
+31.9343 	EXP 	fix5: autoDraw = False
+31.9343 	EXP 	outcome_circle: autoDraw = False
+31.9343 	EXP 	feedbacktext: autoDraw = False
+31.9343 	EXP 	fix4: image = 'stimuli/Fixation.png'
+31.9343 	EXP 	fix4: autoDraw = True
+33.4859 	EXP 	fix4: autoDraw = False
+33.4859 	EXP 	fix4: autoDraw = False
+33.4859 	EXP 	reveal2: text = 10
+33.4859 	EXP 	fix6: image = 'stimuli/Fixation.png'
+33.4859 	EXP 	counter_square: image = 'stimuli/green_square.PNG'
+33.4859 	EXP 	feedbacktext_2: color = 'black (named)'
+33.4859 	EXP 	feedbacktext_2: text = 'You would have won! '
+33.4859 	EXP 	reveal2: autoDraw = True
+33.4859 	EXP 	fix6: autoDraw = True
+33.4859 	EXP 	counter_square: autoDraw = True
+33.4859 	EXP 	feedbacktext_2: autoDraw = True
+33.7746 	EXP 	New trial (rep=0, index=3): OrderedDict([('imageFile', 'stimuli/house1.png'), ('imageFile2', 'stimuli/Face1.jpg'), ('imageFix', 'stimuli/Fixation.png'), ('option1', 20), ('option2', 30), ('outcome', 'stimuli/red_circle.PNG'), ('counterfactual', 'stimuli/red_square.PNG'), ('corr', 'right'), ('point_earned_optimal', 0), ('point_earned_alt', 0), ('outcome_msg_optimal', 'You lost! '), ('outcome_msg_alt', 'You would have lost! '), ('counterfactual_msg_optimal', 'You would have lost! '), ('counterfactual_msg_alt', 'You lost! ')])
+33.7862 	EXP 	reveal2: autoDraw = False
+33.7862 	EXP 	fix6: autoDraw = False
+33.7862 	EXP 	counter_square: autoDraw = False
+33.7862 	EXP 	feedbacktext_2: autoDraw = False
+33.7862 	EXP 	reveal2: autoDraw = False
+33.7862 	EXP 	fix6: autoDraw = False
+33.7862 	EXP 	counter_square: autoDraw = False
+33.7862 	EXP 	feedbacktext_2: autoDraw = False
+33.7862 	EXP 	fix4: image = 'stimuli/Fixation.png'
+33.7862 	EXP 	fix4: autoDraw = True
+35.3043 	EXP 	fix4: autoDraw = False
+35.3043 	EXP 	fix4: autoDraw = False
+35.3043 	EXP 	stim1: image = 'stimuli/house1.png'
+35.3043 	EXP 	fix: image = 'stimuli/Fixation.png'
+35.3043 	EXP 	prob1: text = 20
+35.3043 	EXP 	stim1: autoDraw = True
+35.3043 	EXP 	fix: autoDraw = True
+35.3043 	EXP 	prob1: autoDraw = True
+35.5053 	EXP 	stim1: autoDraw = False
+35.5053 	EXP 	fix: autoDraw = False
+35.5053 	EXP 	prob1: autoDraw = False
+35.5053 	EXP 	stim1: autoDraw = False
+35.5053 	EXP 	fix: autoDraw = False
+35.5053 	EXP 	prob1: autoDraw = False
+35.5053 	EXP 	jitter1: pos = array([0., 0.])
+35.5053 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+35.5053 	EXP 	jitter1: autoDraw = True
+36.5232 	EXP 	jitter1: autoDraw = False
+36.5232 	EXP 	jitter1: autoDraw = False
+36.5232 	EXP 	stim2: image = 'stimuli/Face1.jpg'
+36.5232 	EXP 	fix2: image = 'stimuli/Fixation.png'
+36.5232 	EXP 	prob2: text = 30
+36.5232 	EXP 	stim2: autoDraw = True
+36.5232 	EXP 	fix2: autoDraw = True
+36.5232 	EXP 	prob2: autoDraw = True
+36.7225 	EXP 	stim2: autoDraw = False
+36.7225 	EXP 	fix2: autoDraw = False
+36.7225 	EXP 	prob2: autoDraw = False
+36.7225 	EXP 	stim2: autoDraw = False
+36.7225 	EXP 	fix2: autoDraw = False
+36.7225 	EXP 	prob2: autoDraw = False
+36.7225 	EXP 	jitter1: pos = array([0., 0.])
+36.7225 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+36.7225 	EXP 	jitter1: autoDraw = True
+37.7244 	EXP 	jitter1: autoDraw = False
+37.7244 	EXP 	jitter1: autoDraw = False
+37.7244 	EXP 	Choice: autoDraw = True
+40.4310 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+40.4313 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+40.4316 	EXP 	New trial (rep=0, index=0): None
+40.4355 	DATA 	Keypress: right
+40.4429 	EXP 	Choice: autoDraw = False
+40.4429 	EXP 	fix3: image = 'stimuli/Fixation.png'
+40.4429 	EXP 	fix3: autoDraw = True
+41.4939 	EXP 	fix3: autoDraw = False
+41.4939 	EXP 	fix3: autoDraw = False
+41.4939 	EXP 	reveal: text = 20
+41.4939 	EXP 	fix5: image = 'stimuli/Fixation.png'
+41.4939 	EXP 	outcome_circle: image = 'stimuli/red_circle.PNG'
+41.4939 	EXP 	feedbacktext: color = 'black (named)'
+41.4939 	EXP 	feedbacktext: text = 'You lost! '
+41.4939 	EXP 	reveal: autoDraw = True
+41.4939 	EXP 	fix5: autoDraw = True
+41.4939 	EXP 	outcome_circle: autoDraw = True
+41.4939 	EXP 	feedbacktext: autoDraw = True
+41.7943 	EXP 	reveal: autoDraw = False
+41.7943 	EXP 	fix5: autoDraw = False
+41.7943 	EXP 	outcome_circle: autoDraw = False
+41.7943 	EXP 	feedbacktext: autoDraw = False
+41.7943 	EXP 	reveal: autoDraw = False
+41.7943 	EXP 	fix5: autoDraw = False
+41.7943 	EXP 	outcome_circle: autoDraw = False
+41.7943 	EXP 	feedbacktext: autoDraw = False
+41.7943 	EXP 	fix4: image = 'stimuli/Fixation.png'
+41.7943 	EXP 	fix4: autoDraw = True
+43.3458 	EXP 	fix4: autoDraw = False
+43.3458 	EXP 	fix4: autoDraw = False
+43.3458 	EXP 	reveal2: text = 30
+43.3458 	EXP 	fix6: image = 'stimuli/Fixation.png'
+43.3458 	EXP 	counter_square: image = 'stimuli/red_square.PNG'
+43.3458 	EXP 	feedbacktext_2: color = 'black (named)'
+43.3458 	EXP 	feedbacktext_2: text = 'You would have lost! '
+43.3458 	EXP 	reveal2: autoDraw = True
+43.3458 	EXP 	fix6: autoDraw = True
+43.3458 	EXP 	counter_square: autoDraw = True
+43.3458 	EXP 	feedbacktext_2: autoDraw = True
+43.6345 	EXP 	New trial (rep=0, index=4): OrderedDict([('imageFile', 'stimuli/Face1.jpg'), ('imageFile2', 'stimuli/house1.png'), ('imageFix', 'stimuli/Fixation.png'), ('option1', 15), ('option2', 35), ('outcome', 'stimuli/red_square.PNG'), ('counterfactual', 'stimuli/green_square.PNG'), ('corr', 'right'), ('point_earned_optimal', 35), ('point_earned_alt', 0), ('outcome_msg_optimal', 'You would have lost! '), ('outcome_msg_alt', 'You lost! '), ('counterfactual_msg_optimal', 'You won! '), ('counterfactual_msg_alt', 'You would have won! ')])
+43.6461 	EXP 	reveal2: autoDraw = False
+43.6461 	EXP 	fix6: autoDraw = False
+43.6461 	EXP 	counter_square: autoDraw = False
+43.6461 	EXP 	feedbacktext_2: autoDraw = False
+43.6461 	EXP 	reveal2: autoDraw = False
+43.6461 	EXP 	fix6: autoDraw = False
+43.6461 	EXP 	counter_square: autoDraw = False
+43.6461 	EXP 	feedbacktext_2: autoDraw = False
+43.6461 	EXP 	fix4: image = 'stimuli/Fixation.png'
+43.6461 	EXP 	fix4: autoDraw = True
+45.1650 	EXP 	fix4: autoDraw = False
+45.1650 	EXP 	fix4: autoDraw = False
+45.1650 	EXP 	stim1: image = 'stimuli/Face1.jpg'
+45.1650 	EXP 	fix: image = 'stimuli/Fixation.png'
+45.1650 	EXP 	prob1: text = 15
+45.1650 	EXP 	stim1: autoDraw = True
+45.1650 	EXP 	fix: autoDraw = True
+45.1650 	EXP 	prob1: autoDraw = True
+45.3645 	EXP 	stim1: autoDraw = False
+45.3645 	EXP 	fix: autoDraw = False
+45.3645 	EXP 	prob1: autoDraw = False
+45.3645 	EXP 	stim1: autoDraw = False
+45.3645 	EXP 	fix: autoDraw = False
+45.3645 	EXP 	prob1: autoDraw = False
+45.3645 	EXP 	jitter1: pos = array([0., 0.])
+45.3645 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+45.3645 	EXP 	jitter1: autoDraw = True
+46.3822 	EXP 	jitter1: autoDraw = False
+46.3822 	EXP 	jitter1: autoDraw = False
+46.3822 	EXP 	stim2: image = 'stimuli/house1.png'
+46.3822 	EXP 	fix2: image = 'stimuli/Fixation.png'
+46.3822 	EXP 	prob2: text = 35
+46.3822 	EXP 	stim2: autoDraw = True
+46.3822 	EXP 	fix2: autoDraw = True
+46.3822 	EXP 	prob2: autoDraw = True
+46.5825 	EXP 	stim2: autoDraw = False
+46.5825 	EXP 	fix2: autoDraw = False
+46.5825 	EXP 	prob2: autoDraw = False
+46.5825 	EXP 	stim2: autoDraw = False
+46.5825 	EXP 	fix2: autoDraw = False
+46.5825 	EXP 	prob2: autoDraw = False
+46.5825 	EXP 	jitter1: pos = array([0., 0.])
+46.5825 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+46.5825 	EXP 	jitter1: autoDraw = True
+47.5835 	EXP 	jitter1: autoDraw = False
+47.5835 	EXP 	jitter1: autoDraw = False
+47.5835 	EXP 	Choice: autoDraw = True
+48.7401 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+48.7404 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+48.7407 	EXP 	New trial (rep=0, index=0): None
+48.7447 	DATA 	Keypress: left
+48.7513 	EXP 	Choice: autoDraw = False
+48.7513 	EXP 	fix3: image = 'stimuli/Fixation.png'
+48.7513 	EXP 	fix3: autoDraw = True
+49.8023 	EXP 	fix3: autoDraw = False
+49.8023 	EXP 	fix3: autoDraw = False
+49.8023 	EXP 	reveal: text = 15
+49.8023 	EXP 	fix5: image = 'stimuli/Fixation.png'
+49.8023 	EXP 	outcome_circle: image = 'stimuli/red_square.PNG'
+49.8023 	EXP 	feedbacktext: color = 'black (named)'
+49.8023 	EXP 	feedbacktext: text = 'You lost! '
+49.8023 	EXP 	reveal: autoDraw = True
+49.8023 	EXP 	fix5: autoDraw = True
+49.8023 	EXP 	outcome_circle: autoDraw = True
+49.8023 	EXP 	feedbacktext: autoDraw = True
+50.1030 	EXP 	reveal: autoDraw = False
+50.1030 	EXP 	fix5: autoDraw = False
+50.1030 	EXP 	outcome_circle: autoDraw = False
+50.1030 	EXP 	feedbacktext: autoDraw = False
+50.1030 	EXP 	reveal: autoDraw = False
+50.1030 	EXP 	fix5: autoDraw = False
+50.1030 	EXP 	outcome_circle: autoDraw = False
+50.1030 	EXP 	feedbacktext: autoDraw = False
+50.1030 	EXP 	fix4: image = 'stimuli/Fixation.png'
+50.1030 	EXP 	fix4: autoDraw = True
+51.6550 	EXP 	fix4: autoDraw = False
+51.6550 	EXP 	fix4: autoDraw = False
+51.6550 	EXP 	reveal2: text = 35
+51.6550 	EXP 	fix6: image = 'stimuli/Fixation.png'
+51.6550 	EXP 	counter_square: image = 'stimuli/green_square.PNG'
+51.6550 	EXP 	feedbacktext_2: color = 'black (named)'
+51.6550 	EXP 	feedbacktext_2: text = 'You would have won! '
+51.6550 	EXP 	reveal2: autoDraw = True
+51.6550 	EXP 	fix6: autoDraw = True
+51.6550 	EXP 	counter_square: autoDraw = True
+51.6550 	EXP 	feedbacktext_2: autoDraw = True
+51.9433 	EXP 	New trial (rep=0, index=5): OrderedDict([('imageFile', 'stimuli/house1.png'), ('imageFile2', 'stimuli/Face1.jpg'), ('imageFix', 'stimuli/Fixation.png'), ('option1', 25), ('option2', 55), ('outcome', 'stimuli/green_circle.PNG'), ('counterfactual', 'stimuli/red_square.PNG'), ('corr', 'left'), ('point_earned_optimal', 25), ('point_earned_alt', 0), ('outcome_msg_optimal', 'You won! '), ('outcome_msg_alt', 'You would have won! '), ('counterfactual_msg_optimal', 'You lost! '), ('counterfactual_msg_alt', 'You would have lost! ')])
+51.9545 	EXP 	reveal2: autoDraw = False
+51.9545 	EXP 	fix6: autoDraw = False
+51.9545 	EXP 	counter_square: autoDraw = False
+51.9545 	EXP 	feedbacktext_2: autoDraw = False
+51.9545 	EXP 	reveal2: autoDraw = False
+51.9545 	EXP 	fix6: autoDraw = False
+51.9545 	EXP 	counter_square: autoDraw = False
+51.9545 	EXP 	feedbacktext_2: autoDraw = False
+51.9545 	EXP 	fix4: image = 'stimuli/Fixation.png'
+51.9545 	EXP 	fix4: autoDraw = True
+53.4727 	EXP 	fix4: autoDraw = False
+53.4727 	EXP 	fix4: autoDraw = False
+53.4727 	EXP 	stim1: image = 'stimuli/house1.png'
+53.4727 	EXP 	fix: image = 'stimuli/Fixation.png'
+53.4727 	EXP 	prob1: text = 25
+53.4727 	EXP 	stim1: autoDraw = True
+53.4727 	EXP 	fix: autoDraw = True
+53.4727 	EXP 	prob1: autoDraw = True
+53.6729 	EXP 	stim1: autoDraw = False
+53.6729 	EXP 	fix: autoDraw = False
+53.6729 	EXP 	prob1: autoDraw = False
+53.6729 	EXP 	stim1: autoDraw = False
+53.6729 	EXP 	fix: autoDraw = False
+53.6729 	EXP 	prob1: autoDraw = False
+53.6729 	EXP 	jitter1: pos = array([0., 0.])
+53.6729 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+53.6729 	EXP 	jitter1: autoDraw = True
+54.6910 	EXP 	jitter1: autoDraw = False
+54.6910 	EXP 	jitter1: autoDraw = False
+54.6910 	EXP 	stim2: image = 'stimuli/Face1.jpg'
+54.6910 	EXP 	fix2: image = 'stimuli/Fixation.png'
+54.6910 	EXP 	prob2: text = 55
+54.6910 	EXP 	stim2: autoDraw = True
+54.6910 	EXP 	fix2: autoDraw = True
+54.6910 	EXP 	prob2: autoDraw = True
+54.8911 	EXP 	stim2: autoDraw = False
+54.8911 	EXP 	fix2: autoDraw = False
+54.8911 	EXP 	prob2: autoDraw = False
+54.8911 	EXP 	stim2: autoDraw = False
+54.8911 	EXP 	fix2: autoDraw = False
+54.8911 	EXP 	prob2: autoDraw = False
+54.8911 	EXP 	jitter1: pos = array([0., 0.])
+54.8911 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+54.8911 	EXP 	jitter1: autoDraw = True
+55.8918 	EXP 	jitter1: autoDraw = False
+55.8918 	EXP 	jitter1: autoDraw = False
+55.8918 	EXP 	Choice: autoDraw = True
+56.9317 	DATA 	Keypress: right
+56.9492 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+56.9496 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+56.9499 	EXP 	New trial (rep=0, index=0): None
+56.9596 	EXP 	Choice: autoDraw = False
+56.9596 	EXP 	fix3: image = 'stimuli/Fixation.png'
+56.9596 	EXP 	fix3: autoDraw = True
+58.0106 	EXP 	fix3: autoDraw = False
+58.0106 	EXP 	fix3: autoDraw = False
+58.0106 	EXP 	reveal: text = 25
+58.0106 	EXP 	fix5: image = 'stimuli/Fixation.png'
+58.0106 	EXP 	outcome_circle: image = 'stimuli/green_circle.PNG'
+58.0106 	EXP 	feedbacktext: color = 'black (named)'
+58.0106 	EXP 	feedbacktext: text = 'You would have won! '
+58.0106 	EXP 	reveal: autoDraw = True
+58.0106 	EXP 	fix5: autoDraw = True
+58.0106 	EXP 	outcome_circle: autoDraw = True
+58.0106 	EXP 	feedbacktext: autoDraw = True
+58.3110 	EXP 	reveal: autoDraw = False
+58.3110 	EXP 	fix5: autoDraw = False
+58.3110 	EXP 	outcome_circle: autoDraw = False
+58.3110 	EXP 	feedbacktext: autoDraw = False
+58.3110 	EXP 	reveal: autoDraw = False
+58.3110 	EXP 	fix5: autoDraw = False
+58.3110 	EXP 	outcome_circle: autoDraw = False
+58.3110 	EXP 	feedbacktext: autoDraw = False
+58.3110 	EXP 	fix4: image = 'stimuli/Fixation.png'
+58.3110 	EXP 	fix4: autoDraw = True
+59.8625 	EXP 	fix4: autoDraw = False
+59.8625 	EXP 	fix4: autoDraw = False
+59.8625 	EXP 	reveal2: text = 55
+59.8625 	EXP 	fix6: image = 'stimuli/Fixation.png'
+59.8625 	EXP 	counter_square: image = 'stimuli/red_square.PNG'
+59.8625 	EXP 	feedbacktext_2: color = 'black (named)'
+59.8625 	EXP 	feedbacktext_2: text = 'You would have lost! '
+59.8625 	EXP 	reveal2: autoDraw = True
+59.8625 	EXP 	fix6: autoDraw = True
+59.8625 	EXP 	counter_square: autoDraw = True
+59.8625 	EXP 	feedbacktext_2: autoDraw = True
+60.1512 	EXP 	New trial (rep=0, index=6): OrderedDict([('imageFile', 'stimuli/Face1.jpg'), ('imageFile2', 'stimuli/house1.png'), ('imageFix', 'stimuli/Fixation.png'), ('option1', 55), ('option2', 10), ('outcome', 'stimuli/red_square.PNG'), ('counterfactual', 'stimuli/green_square.PNG'), ('corr', 'right'), ('point_earned_optimal', 10), ('point_earned_alt', 0), ('outcome_msg_optimal', 'You would have lost! '), ('outcome_msg_alt', 'You lost! '), ('counterfactual_msg_optimal', 'You won! '), ('counterfactual_msg_alt', 'You would have won! ')])
+60.1628 	EXP 	reveal2: autoDraw = False
+60.1628 	EXP 	fix6: autoDraw = False
+60.1628 	EXP 	counter_square: autoDraw = False
+60.1628 	EXP 	feedbacktext_2: autoDraw = False
+60.1628 	EXP 	reveal2: autoDraw = False
+60.1628 	EXP 	fix6: autoDraw = False
+60.1628 	EXP 	counter_square: autoDraw = False
+60.1628 	EXP 	feedbacktext_2: autoDraw = False
+60.1628 	EXP 	fix4: image = 'stimuli/Fixation.png'
+60.1628 	EXP 	fix4: autoDraw = True
+61.6811 	EXP 	fix4: autoDraw = False
+61.6811 	EXP 	fix4: autoDraw = False
+61.6811 	EXP 	stim1: image = 'stimuli/Face1.jpg'
+61.6811 	EXP 	fix: image = 'stimuli/Fixation.png'
+61.6811 	EXP 	prob1: text = 55
+61.6811 	EXP 	stim1: autoDraw = True
+61.6811 	EXP 	fix: autoDraw = True
+61.6811 	EXP 	prob1: autoDraw = True
+61.8820 	EXP 	stim1: autoDraw = False
+61.8820 	EXP 	fix: autoDraw = False
+61.8820 	EXP 	prob1: autoDraw = False
+61.8820 	EXP 	stim1: autoDraw = False
+61.8820 	EXP 	fix: autoDraw = False
+61.8820 	EXP 	prob1: autoDraw = False
+61.8820 	EXP 	jitter1: pos = array([0., 0.])
+61.8820 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+61.8820 	EXP 	jitter1: autoDraw = True
+62.8989 	EXP 	jitter1: autoDraw = False
+62.8989 	EXP 	jitter1: autoDraw = False
+62.8989 	EXP 	stim2: image = 'stimuli/house1.png'
+62.8989 	EXP 	fix2: image = 'stimuli/Fixation.png'
+62.8989 	EXP 	prob2: text = 10
+62.8989 	EXP 	stim2: autoDraw = True
+62.8989 	EXP 	fix2: autoDraw = True
+62.8989 	EXP 	prob2: autoDraw = True
+63.0991 	EXP 	stim2: autoDraw = False
+63.0991 	EXP 	fix2: autoDraw = False
+63.0991 	EXP 	prob2: autoDraw = False
+63.0991 	EXP 	stim2: autoDraw = False
+63.0991 	EXP 	fix2: autoDraw = False
+63.0991 	EXP 	prob2: autoDraw = False
+63.0991 	EXP 	jitter1: pos = array([0., 0.])
+63.0991 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+63.0991 	EXP 	jitter1: autoDraw = True
+64.1001 	EXP 	jitter1: autoDraw = False
+64.1001 	EXP 	jitter1: autoDraw = False
+64.1001 	EXP 	Choice: autoDraw = True
+66.0915 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+66.0919 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+66.0922 	EXP 	New trial (rep=0, index=0): None
+66.0959 	DATA 	Keypress: left
+66.1021 	EXP 	Choice: autoDraw = False
+66.1021 	EXP 	fix3: image = 'stimuli/Fixation.png'
+66.1021 	EXP 	fix3: autoDraw = True
+67.1538 	EXP 	fix3: autoDraw = False
+67.1538 	EXP 	fix3: autoDraw = False
+67.1538 	EXP 	reveal: text = 55
+67.1538 	EXP 	fix5: image = 'stimuli/Fixation.png'
+67.1538 	EXP 	outcome_circle: image = 'stimuli/red_square.PNG'
+67.1538 	EXP 	feedbacktext: color = 'black (named)'
+67.1538 	EXP 	feedbacktext: text = 'You lost! '
+67.1538 	EXP 	reveal: autoDraw = True
+67.1538 	EXP 	fix5: autoDraw = True
+67.1538 	EXP 	outcome_circle: autoDraw = True
+67.1538 	EXP 	feedbacktext: autoDraw = True
+67.4544 	EXP 	reveal: autoDraw = False
+67.4544 	EXP 	fix5: autoDraw = False
+67.4544 	EXP 	outcome_circle: autoDraw = False
+67.4544 	EXP 	feedbacktext: autoDraw = False
+67.4544 	EXP 	reveal: autoDraw = False
+67.4544 	EXP 	fix5: autoDraw = False
+67.4544 	EXP 	outcome_circle: autoDraw = False
+67.4544 	EXP 	feedbacktext: autoDraw = False
+67.4544 	EXP 	fix4: image = 'stimuli/Fixation.png'
+67.4544 	EXP 	fix4: autoDraw = True
+69.0050 	EXP 	fix4: autoDraw = False
+69.0050 	EXP 	fix4: autoDraw = False
+69.0050 	EXP 	reveal2: text = 10
+69.0050 	EXP 	fix6: image = 'stimuli/Fixation.png'
+69.0050 	EXP 	counter_square: image = 'stimuli/green_square.PNG'
+69.0050 	EXP 	feedbacktext_2: color = 'black (named)'
+69.0050 	EXP 	feedbacktext_2: text = 'You would have won! '
+69.0050 	EXP 	reveal2: autoDraw = True
+69.0050 	EXP 	fix6: autoDraw = True
+69.0050 	EXP 	counter_square: autoDraw = True
+69.0050 	EXP 	feedbacktext_2: autoDraw = True
+69.2939 	EXP 	New trial (rep=0, index=7): OrderedDict([('imageFile', 'stimuli/house1.png'), ('imageFile2', 'stimuli/Face1.jpg'), ('imageFix', 'stimuli/Fixation.png'), ('option1', 20), ('option2', 30), ('outcome', 'stimuli/green_circle.PNG'), ('counterfactual', 'stimuli/green_square.PNG'), ('corr', 'right'), ('point_earned_optimal', 30), ('point_earned_alt', 20), ('outcome_msg_optimal', 'You would have won! '), ('outcome_msg_alt', 'You won! '), ('counterfactual_msg_optimal', 'You won! '), ('counterfactual_msg_alt', 'You would have won! ')])
+69.3054 	EXP 	reveal2: autoDraw = False
+69.3054 	EXP 	fix6: autoDraw = False
+69.3054 	EXP 	counter_square: autoDraw = False
+69.3054 	EXP 	feedbacktext_2: autoDraw = False
+69.3054 	EXP 	reveal2: autoDraw = False
+69.3054 	EXP 	fix6: autoDraw = False
+69.3054 	EXP 	counter_square: autoDraw = False
+69.3054 	EXP 	feedbacktext_2: autoDraw = False
+69.3054 	EXP 	fix4: image = 'stimuli/Fixation.png'
+69.3054 	EXP 	fix4: autoDraw = True
+70.8235 	EXP 	fix4: autoDraw = False
+70.8235 	EXP 	fix4: autoDraw = False
+70.8235 	EXP 	stim1: image = 'stimuli/house1.png'
+70.8235 	EXP 	fix: image = 'stimuli/Fixation.png'
+70.8235 	EXP 	prob1: text = 20
+70.8235 	EXP 	stim1: autoDraw = True
+70.8235 	EXP 	fix: autoDraw = True
+70.8235 	EXP 	prob1: autoDraw = True
+71.0245 	EXP 	stim1: autoDraw = False
+71.0245 	EXP 	fix: autoDraw = False
+71.0245 	EXP 	prob1: autoDraw = False
+71.0245 	EXP 	stim1: autoDraw = False
+71.0245 	EXP 	fix: autoDraw = False
+71.0245 	EXP 	prob1: autoDraw = False
+71.0245 	EXP 	jitter1: pos = array([0., 0.])
+71.0245 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+71.0245 	EXP 	jitter1: autoDraw = True
+72.0419 	EXP 	jitter1: autoDraw = False
+72.0419 	EXP 	jitter1: autoDraw = False
+72.0419 	EXP 	stim2: image = 'stimuli/Face1.jpg'
+72.0419 	EXP 	fix2: image = 'stimuli/Fixation.png'
+72.0419 	EXP 	prob2: text = 30
+72.0419 	EXP 	stim2: autoDraw = True
+72.0419 	EXP 	fix2: autoDraw = True
+72.0419 	EXP 	prob2: autoDraw = True
+72.2416 	EXP 	stim2: autoDraw = False
+72.2416 	EXP 	fix2: autoDraw = False
+72.2416 	EXP 	prob2: autoDraw = False
+72.2416 	EXP 	stim2: autoDraw = False
+72.2416 	EXP 	fix2: autoDraw = False
+72.2416 	EXP 	prob2: autoDraw = False
+72.2416 	EXP 	jitter1: pos = array([0., 0.])
+72.2416 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+72.2416 	EXP 	jitter1: autoDraw = True
+73.2427 	EXP 	jitter1: autoDraw = False
+73.2427 	EXP 	jitter1: autoDraw = False
+73.2427 	EXP 	Choice: autoDraw = True
+74.9000 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+74.9003 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+74.9006 	EXP 	New trial (rep=0, index=0): None
+74.9045 	DATA 	Keypress: right
+74.9110 	EXP 	Choice: autoDraw = False
+74.9110 	EXP 	fix3: image = 'stimuli/Fixation.png'
+74.9110 	EXP 	fix3: autoDraw = True
+75.9619 	EXP 	fix3: autoDraw = False
+75.9619 	EXP 	fix3: autoDraw = False
+75.9619 	EXP 	reveal: text = 20
+75.9619 	EXP 	fix5: image = 'stimuli/Fixation.png'
+75.9619 	EXP 	outcome_circle: image = 'stimuli/green_circle.PNG'
+75.9619 	EXP 	feedbacktext: color = 'black (named)'
+75.9619 	EXP 	feedbacktext: text = 'You would have won! '
+75.9619 	EXP 	reveal: autoDraw = True
+75.9619 	EXP 	fix5: autoDraw = True
+75.9619 	EXP 	outcome_circle: autoDraw = True
+75.9619 	EXP 	feedbacktext: autoDraw = True
+76.2624 	EXP 	reveal: autoDraw = False
+76.2624 	EXP 	fix5: autoDraw = False
+76.2624 	EXP 	outcome_circle: autoDraw = False
+76.2624 	EXP 	feedbacktext: autoDraw = False
+76.2624 	EXP 	reveal: autoDraw = False
+76.2624 	EXP 	fix5: autoDraw = False
+76.2624 	EXP 	outcome_circle: autoDraw = False
+76.2624 	EXP 	feedbacktext: autoDraw = False
+76.2624 	EXP 	fix4: image = 'stimuli/Fixation.png'
+76.2624 	EXP 	fix4: autoDraw = True
+77.8139 	EXP 	fix4: autoDraw = False
+77.8139 	EXP 	fix4: autoDraw = False
+77.8139 	EXP 	reveal2: text = 30
+77.8139 	EXP 	fix6: image = 'stimuli/Fixation.png'
+77.8139 	EXP 	counter_square: image = 'stimuli/green_square.PNG'
+77.8139 	EXP 	feedbacktext_2: color = 'black (named)'
+77.8139 	EXP 	feedbacktext_2: text = 'You won! '
+77.8139 	EXP 	reveal2: autoDraw = True
+77.8139 	EXP 	fix6: autoDraw = True
+77.8139 	EXP 	counter_square: autoDraw = True
+77.8139 	EXP 	feedbacktext_2: autoDraw = True
+78.1308 	EXP 	reveal2: autoDraw = False
+78.1308 	EXP 	fix6: autoDraw = False
+78.1308 	EXP 	counter_square: autoDraw = False
+78.1308 	EXP 	feedbacktext_2: autoDraw = False
+78.1308 	EXP 	reveal2: autoDraw = False
+78.1308 	EXP 	fix6: autoDraw = False
+78.1308 	EXP 	counter_square: autoDraw = False
+78.1308 	EXP 	feedbacktext_2: autoDraw = False
+78.1308 	EXP 	total_points_earned: text = 865
+78.1308 	EXP 	practice_finish: autoDraw = True
+78.1308 	EXP 	total_points_earned: autoDraw = True
+78.1308 	EXP 	points_earned: autoDraw = True
+80.6584 	DATA 	Keypress: space
+80.6672 	EXP 	practice_finish: autoDraw = False
+80.6672 	EXP 	total_points_earned: autoDraw = False
+80.6672 	EXP 	points_earned: autoDraw = False
+80.6672 	EXP 	text_2: autoDraw = True
+82.3156 	EXP 	Imported block1.csv as conditions, 4 conditions, 14 params
+82.3160 	EXP 	Created sequence: sequential, trialTypes=4, nReps=1, seed=None
+82.3169 	EXP 	New trial (rep=0, index=0): OrderedDict([('imageFile', 'stimuli/Face1.jpg'), ('imageFile2', 'stimuli/house1.png'), ('imageFix', 'stimuli/Fixation.png'), ('option1', 15), ('option2', 35), ('outcome', 'stimuli/green_circle.PNG'), ('counterfactual', 'stimuli/red_square.PNG'), ('corr', 'left'), ('point_earned_optimal', 15), ('point_earned_alt', 0), ('outcome_msg_optimal', ' '), ('outcome_msg_alt', ' '), ('counterfactual_msg_optimal', ' '), ('counterfactual_msg_alt', ' ')])
+82.3208 	DATA 	Keypress: space
+82.3360 	EXP 	text_2: autoDraw = False
+82.3360 	EXP 	fix4: image = 'stimuli/Fixation.png'
+82.3360 	EXP 	fix4: autoDraw = True
+83.8534 	EXP 	fix4: autoDraw = False
+83.8534 	EXP 	stim1: image = 'stimuli/Face1.jpg'
+83.8534 	EXP 	fix: image = 'stimuli/Fixation.png'
+83.8534 	EXP 	prob1: text = 15
+83.8534 	EXP 	stim1: autoDraw = True
+83.8534 	EXP 	fix: autoDraw = True
+83.8534 	EXP 	prob1: autoDraw = True
+84.0376 	EXP 	stim1: autoDraw = False
+84.0376 	EXP 	fix: autoDraw = False
+84.0376 	EXP 	prob1: autoDraw = False
+84.0376 	EXP 	jitter1: pos = array([0., 0.])
+84.0376 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+84.0376 	EXP 	jitter1: autoDraw = True
+85.0546 	EXP 	jitter1: autoDraw = False
+85.0546 	EXP 	stim2: image = 'stimuli/house1.png'
+85.0546 	EXP 	fix2: image = 'stimuli/Fixation.png'
+85.0546 	EXP 	prob2: text = 35
+85.0546 	EXP 	stim2: autoDraw = True
+85.0546 	EXP 	fix2: autoDraw = True
+85.0546 	EXP 	prob2: autoDraw = True
+85.2382 	EXP 	stim2: autoDraw = False
+85.2382 	EXP 	fix2: autoDraw = False
+85.2382 	EXP 	prob2: autoDraw = False
+85.2382 	EXP 	jitter1: pos = array([0., 0.])
+85.2382 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+85.2382 	EXP 	jitter1: autoDraw = True
+86.2236 	EXP 	jitter1: autoDraw = False
+86.2236 	EXP 	Choice: autoDraw = True
+86.6451 	DATA 	Keypress: left
+86.6629 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+86.6633 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+86.6638 	EXP 	New trial (rep=0, index=0): None
+86.6728 	EXP 	Choice: autoDraw = False
+86.6728 	EXP 	fix3: image = 'stimuli/Fixation.png'
+86.6728 	EXP 	fix3: autoDraw = True
+87.7239 	EXP 	fix3: autoDraw = False
+87.7239 	EXP 	fix3: autoDraw = False
+87.7239 	EXP 	reveal: text = 15
+87.7239 	EXP 	fix5: image = 'stimuli/Fixation.png'
+87.7239 	EXP 	outcome_circle: image = 'stimuli/green_circle.PNG'
+87.7239 	EXP 	feedbacktext: color = 'black (named)'
+87.7239 	EXP 	feedbacktext: text = ' '
+87.7239 	EXP 	reveal: autoDraw = True
+87.7239 	EXP 	fix5: autoDraw = True
+87.7239 	EXP 	outcome_circle: autoDraw = True
+87.7239 	EXP 	feedbacktext: autoDraw = True
+88.0242 	EXP 	reveal: autoDraw = False
+88.0242 	EXP 	fix5: autoDraw = False
+88.0242 	EXP 	outcome_circle: autoDraw = False
+88.0242 	EXP 	feedbacktext: autoDraw = False
+88.0242 	EXP 	reveal: autoDraw = False
+88.0242 	EXP 	fix5: autoDraw = False
+88.0242 	EXP 	outcome_circle: autoDraw = False
+88.0242 	EXP 	feedbacktext: autoDraw = False
+88.0242 	EXP 	fix4: image = 'stimuli/Fixation.png'
+88.0242 	EXP 	fix4: autoDraw = True
+89.5758 	EXP 	fix4: autoDraw = False
+89.5758 	EXP 	fix4: autoDraw = False
+89.5758 	EXP 	reveal2: text = 35
+89.5758 	EXP 	fix6: image = 'stimuli/Fixation.png'
+89.5758 	EXP 	counter_square: image = 'stimuli/red_square.PNG'
+89.5758 	EXP 	feedbacktext_2: color = 'black (named)'
+89.5758 	EXP 	feedbacktext_2: text = ' '
+89.5758 	EXP 	reveal2: autoDraw = True
+89.5758 	EXP 	fix6: autoDraw = True
+89.5758 	EXP 	counter_square: autoDraw = True
+89.5758 	EXP 	feedbacktext_2: autoDraw = True
+89.8641 	EXP 	New trial (rep=0, index=1): OrderedDict([('imageFile', 'stimuli/house1.png'), ('imageFile2', 'stimuli/Face1.jpg'), ('imageFix', 'stimuli/Fixation.png'), ('option1', 25), ('option2', 55), ('outcome', 'stimuli/red_circle.PNG'), ('counterfactual', 'stimuli/green_square.PNG'), ('corr', 'right'), ('point_earned_optimal', 55), ('point_earned_alt', 0), ('outcome_msg_optimal', ' '), ('outcome_msg_alt', ' '), ('counterfactual_msg_optimal', ' '), ('counterfactual_msg_alt', ' ')])
+89.8761 	EXP 	reveal2: autoDraw = False
+89.8761 	EXP 	fix6: autoDraw = False
+89.8761 	EXP 	counter_square: autoDraw = False
+89.8761 	EXP 	feedbacktext_2: autoDraw = False
+89.8761 	EXP 	reveal2: autoDraw = False
+89.8761 	EXP 	fix6: autoDraw = False
+89.8761 	EXP 	counter_square: autoDraw = False
+89.8761 	EXP 	feedbacktext_2: autoDraw = False
+89.8761 	EXP 	fix4: image = 'stimuli/Fixation.png'
+89.8761 	EXP 	fix4: autoDraw = True
+91.3943 	EXP 	fix4: autoDraw = False
+91.3943 	EXP 	fix4: autoDraw = False
+91.3943 	EXP 	stim1: image = 'stimuli/house1.png'
+91.3943 	EXP 	fix: image = 'stimuli/Fixation.png'
+91.3943 	EXP 	prob1: text = 25
+91.3943 	EXP 	stim1: autoDraw = True
+91.3943 	EXP 	fix: autoDraw = True
+91.3943 	EXP 	prob1: autoDraw = True
+91.5953 	EXP 	stim1: autoDraw = False
+91.5953 	EXP 	fix: autoDraw = False
+91.5953 	EXP 	prob1: autoDraw = False
+91.5953 	EXP 	stim1: autoDraw = False
+91.5953 	EXP 	fix: autoDraw = False
+91.5953 	EXP 	prob1: autoDraw = False
+91.5953 	EXP 	jitter1: pos = array([0., 0.])
+91.5953 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+91.5953 	EXP 	jitter1: autoDraw = True
+92.6122 	EXP 	jitter1: autoDraw = False
+92.6122 	EXP 	jitter1: autoDraw = False
+92.6122 	EXP 	stim2: image = 'stimuli/Face1.jpg'
+92.6122 	EXP 	fix2: image = 'stimuli/Fixation.png'
+92.6122 	EXP 	prob2: text = 55
+92.6122 	EXP 	stim2: autoDraw = True
+92.6122 	EXP 	fix2: autoDraw = True
+92.6122 	EXP 	prob2: autoDraw = True
+92.8128 	EXP 	stim2: autoDraw = False
+92.8128 	EXP 	fix2: autoDraw = False
+92.8128 	EXP 	prob2: autoDraw = False
+92.8128 	EXP 	stim2: autoDraw = False
+92.8128 	EXP 	fix2: autoDraw = False
+92.8128 	EXP 	prob2: autoDraw = False
+92.8128 	EXP 	jitter1: pos = array([0., 0.])
+92.8128 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+92.8128 	EXP 	jitter1: autoDraw = True
+93.8138 	EXP 	jitter1: autoDraw = False
+93.8138 	EXP 	jitter1: autoDraw = False
+93.8138 	EXP 	Choice: autoDraw = True
+94.1859 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+94.1863 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+94.1866 	EXP 	New trial (rep=0, index=0): None
+94.1906 	DATA 	Keypress: right
+94.1972 	EXP 	Choice: autoDraw = False
+94.1972 	EXP 	fix3: image = 'stimuli/Fixation.png'
+94.1972 	EXP 	fix3: autoDraw = True
+95.2483 	EXP 	fix3: autoDraw = False
+95.2483 	EXP 	fix3: autoDraw = False
+95.2483 	EXP 	reveal: text = 25
+95.2483 	EXP 	fix5: image = 'stimuli/Fixation.png'
+95.2483 	EXP 	outcome_circle: image = 'stimuli/red_circle.PNG'
+95.2483 	EXP 	feedbacktext: color = 'black (named)'
+95.2483 	EXP 	feedbacktext: text = ' '
+95.2483 	EXP 	reveal: autoDraw = True
+95.2483 	EXP 	fix5: autoDraw = True
+95.2483 	EXP 	outcome_circle: autoDraw = True
+95.2483 	EXP 	feedbacktext: autoDraw = True
+95.5485 	EXP 	reveal: autoDraw = False
+95.5485 	EXP 	fix5: autoDraw = False
+95.5485 	EXP 	outcome_circle: autoDraw = False
+95.5485 	EXP 	feedbacktext: autoDraw = False
+95.5485 	EXP 	reveal: autoDraw = False
+95.5485 	EXP 	fix5: autoDraw = False
+95.5485 	EXP 	outcome_circle: autoDraw = False
+95.5485 	EXP 	feedbacktext: autoDraw = False
+95.5485 	EXP 	fix4: image = 'stimuli/Fixation.png'
+95.5485 	EXP 	fix4: autoDraw = True
+97.1006 	EXP 	fix4: autoDraw = False
+97.1006 	EXP 	fix4: autoDraw = False
+97.1006 	EXP 	reveal2: text = 55
+97.1006 	EXP 	fix6: image = 'stimuli/Fixation.png'
+97.1006 	EXP 	counter_square: image = 'stimuli/green_square.PNG'
+97.1006 	EXP 	feedbacktext_2: color = 'black (named)'
+97.1006 	EXP 	feedbacktext_2: text = ' '
+97.1006 	EXP 	reveal2: autoDraw = True
+97.1006 	EXP 	fix6: autoDraw = True
+97.1006 	EXP 	counter_square: autoDraw = True
+97.1006 	EXP 	feedbacktext_2: autoDraw = True
+97.3884 	EXP 	New trial (rep=0, index=2): OrderedDict([('imageFile', 'stimuli/Face1.jpg'), ('imageFile2', 'stimuli/house1.png'), ('imageFix', 'stimuli/Fixation.png'), ('option1', 55), ('option2', 10), ('outcome', 'stimuli/green_circle.PNG'), ('counterfactual', 'stimuli/green_square.PNG'), ('corr', 'left'), ('point_earned_optimal', 55), ('point_earned_alt', 10), ('outcome_msg_optimal', ' '), ('outcome_msg_alt', ' '), ('counterfactual_msg_optimal', ' '), ('counterfactual_msg_alt', ' ')])
+97.4004 	EXP 	reveal2: autoDraw = False
+97.4004 	EXP 	fix6: autoDraw = False
+97.4004 	EXP 	counter_square: autoDraw = False
+97.4004 	EXP 	feedbacktext_2: autoDraw = False
+97.4004 	EXP 	reveal2: autoDraw = False
+97.4004 	EXP 	fix6: autoDraw = False
+97.4004 	EXP 	counter_square: autoDraw = False
+97.4004 	EXP 	feedbacktext_2: autoDraw = False
+97.4004 	EXP 	fix4: image = 'stimuli/Fixation.png'
+97.4004 	EXP 	fix4: autoDraw = True
+98.9196 	EXP 	fix4: autoDraw = False
+98.9196 	EXP 	fix4: autoDraw = False
+98.9196 	EXP 	stim1: image = 'stimuli/Face1.jpg'
+98.9196 	EXP 	fix: image = 'stimuli/Fixation.png'
+98.9196 	EXP 	prob1: text = 55
+98.9196 	EXP 	stim1: autoDraw = True
+98.9196 	EXP 	fix: autoDraw = True
+98.9196 	EXP 	prob1: autoDraw = True
+99.1188 	EXP 	stim1: autoDraw = False
+99.1188 	EXP 	fix: autoDraw = False
+99.1188 	EXP 	prob1: autoDraw = False
+99.1188 	EXP 	stim1: autoDraw = False
+99.1188 	EXP 	fix: autoDraw = False
+99.1188 	EXP 	prob1: autoDraw = False
+99.1188 	EXP 	jitter1: pos = array([0., 0.])
+99.1188 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+99.1188 	EXP 	jitter1: autoDraw = True
+100.1364 	EXP 	jitter1: autoDraw = False
+100.1364 	EXP 	jitter1: autoDraw = False
+100.1364 	EXP 	stim2: image = 'stimuli/house1.png'
+100.1364 	EXP 	fix2: image = 'stimuli/Fixation.png'
+100.1364 	EXP 	prob2: text = 10
+100.1364 	EXP 	stim2: autoDraw = True
+100.1364 	EXP 	fix2: autoDraw = True
+100.1364 	EXP 	prob2: autoDraw = True
+100.3368 	EXP 	stim2: autoDraw = False
+100.3368 	EXP 	fix2: autoDraw = False
+100.3368 	EXP 	prob2: autoDraw = False
+100.3368 	EXP 	stim2: autoDraw = False
+100.3368 	EXP 	fix2: autoDraw = False
+100.3368 	EXP 	prob2: autoDraw = False
+100.3368 	EXP 	jitter1: pos = array([0., 0.])
+100.3368 	EXP 	jitter1: image = 'stimuli/Fixation.png'
+100.3368 	EXP 	jitter1: autoDraw = True
+101.3381 	EXP 	jitter1: autoDraw = False
+101.3381 	EXP 	jitter1: autoDraw = False
+101.3381 	EXP 	Choice: autoDraw = True
+101.7770 	EXP 	Created sequence: sequential, trialTypes=1, nReps=0, seed=None
+101.7774 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+101.7776 	EXP 	New trial (rep=0, index=0): None
+101.7815 	DATA 	Keypress: left
+101.7882 	EXP 	Choice: autoDraw = False
+101.7882 	EXP 	fix3: image = 'stimuli/Fixation.png'
+101.7882 	EXP 	fix3: autoDraw = True
+102.8396 	EXP 	fix3: autoDraw = False
+102.8396 	EXP 	fix3: autoDraw = False
+102.8396 	EXP 	reveal: text = 55
+102.8396 	EXP 	fix5: image = 'stimuli/Fixation.png'
+102.8396 	EXP 	outcome_circle: image = 'stimuli/green_circle.PNG'
+102.8396 	EXP 	feedbacktext: color = 'black (named)'
+102.8396 	EXP 	feedbacktext: text = ' '
+102.8396 	EXP 	reveal: autoDraw = True
+102.8396 	EXP 	fix5: autoDraw = True
+102.8396 	EXP 	outcome_circle: autoDraw = True
+102.8396 	EXP 	feedbacktext: autoDraw = True
+103.0267 	DATA 	Keypress: escape
+103.1394 	EXP 	reveal: autoDraw = False
+103.1394 	EXP 	fix5: autoDraw = False
+103.1394 	EXP 	outcome_circle: autoDraw = False
+103.1394 	EXP 	feedbacktext: autoDraw = False
+103.1394 	EXP 	reveal: autoDraw = False
+103.1394 	EXP 	fix5: autoDraw = False
+103.1394 	EXP 	outcome_circle: autoDraw = False
+103.1394 	EXP 	feedbacktext: autoDraw = False
+103.1394 	EXP 	fix4: image = 'stimuli/Fixation.png'
+103.1394 	EXP 	fix4: autoDraw = True
+103.2743 	EXP 	window1: mouseVisible = True

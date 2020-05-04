@@ -1,0 +1,5 @@
+﻿imageFile,imageFile2,imageFix,option1,option2,outcome,counterfactual,corr,point_earned_optimal,point_earned_alt,outcome_msg_optimal,outcome_msg_alt,counterfactual_msg_optimal,counterfactual_msg_alt
+stimuli/Face1.jpg,stimuli/house1.png,stimuli/Fixation.png,15,35,stimuli/green_circle.PNG,stimuli/red_square.PNG,left,15,0, , , , 
+stimuli/house1.png,stimuli/Face1.jpg,stimuli/Fixation.png,25,55,stimuli/red_circle.PNG,stimuli/green_square.PNG,right,55,0, , , , 
+stimuli/Face1.jpg,stimuli/house1.png,stimuli/Fixation.png,55,10,stimuli/green_circle.PNG,stimuli/green_square.PNG,left,55,10, , , , 
+stimuli/house1.png,stimuli/Face1.jpg,stimuli/Fixation.png,20,30,stimuli/red_circle.PNG,stimuli/red_square.PNG,right,0,0, , , , 
