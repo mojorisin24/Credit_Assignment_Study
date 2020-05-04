@@ -406,8 +406,8 @@
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="if ((! key_resp_2.keys)) {&amp;#10;    points_total = (0 + points_total);&amp;#10;    thisExp.addData(&quot;points_total&quot;, points_total);&amp;#10;} else {&amp;#10;    points_total = (points_this_round + points_total);&amp;#10;    thisExp.addData(&quot;points_total&quot;, points_total);&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if not key_resp_2.keys:&amp;#10;    points_total=0 + points_total&amp;#10;    thisExp.addData('points_total',points_total)&amp;#10;else:&amp;#10;    points_total=points_this_round + points_total&amp;#10;    thisExp.addData('points_total',points_total)&amp;#10;" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if ((! key_resp_2.keys)) {&amp;#10;    points_total = (0 + points_total);&amp;#10;} else {&amp;#10;    points_total = (points_this_round + points_total);&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if not key_resp_2.keys:&amp;#10;    points_total=0 + points_total&amp;#10;  # thisExp.addData('points_total',points_total)&amp;#10;else:&amp;#10;    points_total=points_this_round + points_total&amp;#10;   # thisExp.addData('points_total',points_total)&amp;#10;" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="setMsg" valType="code"/>
       </CodeComponent>

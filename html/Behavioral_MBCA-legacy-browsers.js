@@ -2058,10 +2058,8 @@ function OutcomeRoutineEnd(trials) {
     });
     if ((! key_resp_2.keys)) {
         points_total = (0 + points_total);
-        thisExp.addData("points_total", points_total);
     } else {
         points_total = (points_this_round + points_total);
-        thisExp.addData("points_total", points_total);
     }
     
     return Scheduler.Event.NEXT;
