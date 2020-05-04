@@ -707,7 +707,7 @@ function experimentInit() {
   block1_points = new visual.TextStim({
     win: psychoJS.window,
     name: 'block1_points',
-    text: b1_total,
+    text: 'default text',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0.25], height: 0.08,  wrapWidth: undefined, ori: 0,
@@ -2631,12 +2631,8 @@ function Outcome_expRoutineBegin(trials) {
     fix5_2.setImage(imageFix);
     outcome_circle_2.setImage(outcome);
     if (key_resp_6.corr) {
-        msg = outcome_msg_optimal;
-        msgColor = "black";
         points_b1 = point_earned_optimal;
     } else {
-        msg = outcome_msg_alt;
-        msgColor = "black";
         points_b1 = point_earned_alt;
     }
     
@@ -2880,6 +2876,7 @@ function FinishRoutineBegin(trials) {
     block1_wait.keys = undefined;
     block1_wait.rt = undefined;
     _block1_wait_allKeys = [];
+    block1_points.setText(b1_total);
     // keep track of which components have finished
     FinishComponents = [];
     FinishComponents.push(Block_Finish);
