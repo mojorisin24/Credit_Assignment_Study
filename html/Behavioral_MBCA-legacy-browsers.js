@@ -2470,9 +2470,9 @@ function Outcome_expRoutineBegin(trials) {
     fix5_2.setImage(imageFix);
     outcome_circle_2.setImage(outcome);
     if (key_resp_2.corr) {
-        points_this_round = (points_this_round + point_earned_optimal);
+        points_this_round = point_earned_optimal;
     } else {
-        points_this_round = (points_this_round + point_earned_alt);
+        points_this_round = point_earned_alt;
     }
     
     // keep track of which components have finished
