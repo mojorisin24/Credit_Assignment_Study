@@ -1004,17 +1004,17 @@
         <Param name="units" updates="None" val="pix" valType="str"/>
       </ImageComponent>
       <CodeComponent name="setMsg_2">
-        <Param name="Begin Experiment" updates="constant" val="points_this_round = 0 &amp;#10;points_total = 0 " valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="points_this_round = 0;&amp;#10;points_total = 0;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="if (key_resp_2.corr) {&amp;#10;    msg = outcome_msg_optimal;&amp;#10;    msgColor = &quot;black&quot;;&amp;#10;    points_this_round = point_earned_optimal;&amp;#10;} else {&amp;#10;    msg = outcome_msg_alt;&amp;#10;    msgColor = &quot;black&quot;;&amp;#10;    points_this_round = point_earned_alt;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="if key_resp_2.corr:&amp;#10;    msg= outcome_msg_optimal&amp;#10;    msgColor='black'&amp;#10;    points_this_round= point_earned_optimal&amp;#10;else:&amp;#10;    msg= outcome_msg_alt&amp;#10;    msgColor='black'&amp;#10;    points_this_round= point_earned_alt" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="points_b1 = 0 &amp;#10;b1_total = 0 " valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="points_b1 = 0;&amp;#10;b1_total = 0;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (key_resp_2.corr) {&amp;#10;    msg = outcome_msg_optimal;&amp;#10;    msgColor = &quot;black&quot;;&amp;#10;    points_b1 = point_earned_optimal;&amp;#10;} else {&amp;#10;    msg = outcome_msg_alt;&amp;#10;    msgColor = &quot;black&quot;;&amp;#10;    points_b1 = point_earned_alt;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if key_resp_2.corr:&amp;#10;    msg= outcome_msg_optimal&amp;#10;    msgColor='black'&amp;#10;    points_b1= point_earned_optimal&amp;#10;else:&amp;#10;    msg= outcome_msg_alt&amp;#10;    msgColor='black'&amp;#10;    points_b1= point_earned_alt" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="if ((! key_resp_2.keys)) {&amp;#10;    points_total = (0 + points_total);&amp;#10;} else {&amp;#10;    points_total = (points_this_round + points_total);&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if not key_resp_2.keys:&amp;#10;    points_total=0 + points_total&amp;#10;  # thisExp.addData('points_total',points_total)&amp;#10;else:&amp;#10;    points_total=points_this_round + points_total&amp;#10;   # thisExp.addData('points_total',points_total)&amp;#10;" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if ((! key_resp_2.keys)) {&amp;#10;    b1_total = (0 + b1_total);&amp;#10;} else {&amp;#10;    b1_total = (points_b1 + b1_total);&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if not key_resp_2.keys:&amp;#10;    b1_total=0 + b1_total&amp;#10;  # thisExp.addData('points_total',points_total)&amp;#10;else:&amp;#10;    b1_total=points_b1 + b1_total&amp;#10;   # thisExp.addData('points_total',points_total)&amp;#10;" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="setMsg_2" valType="code"/>
       </CodeComponent>

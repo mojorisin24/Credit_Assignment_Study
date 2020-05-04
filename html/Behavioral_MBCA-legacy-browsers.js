@@ -132,6 +132,8 @@ var Outcome_expClock;
 var reveal_2;
 var fix5_2;
 var outcome_circle_2;
+var points_b1;
+var b1_total;
 var counterfactual_expClock;
 var reveal2_2;
 var fix6_2;
@@ -630,8 +632,8 @@ function experimentInit() {
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -2.0 
   });
-  points_this_round = 0;
-  points_total = 0;
+  points_b1 = 0;
+  b1_total = 0;
   
   // Initialize components for Routine "iti2"
   iti2Clock = new util.Clock();
@@ -2472,11 +2474,11 @@ function Outcome_expRoutineBegin(trials) {
     if (key_resp_2.corr) {
         msg = outcome_msg_optimal;
         msgColor = "black";
-        points_this_round = point_earned_optimal;
+        points_b1 = point_earned_optimal;
     } else {
         msg = outcome_msg_alt;
         msgColor = "black";
-        points_this_round = point_earned_alt;
+        points_b1 = point_earned_alt;
     }
     
     // keep track of which components have finished
@@ -2581,9 +2583,9 @@ function Outcome_expRoutineEnd(trials) {
       }
     });
     if ((! key_resp_2.keys)) {
-        points_total = (0 + points_total);
+        b1_total = (0 + b1_total);
     } else {
-        points_total = (points_this_round + points_total);
+        b1_total = (points_b1 + b1_total);
     }
     
     return Scheduler.Event.NEXT;
