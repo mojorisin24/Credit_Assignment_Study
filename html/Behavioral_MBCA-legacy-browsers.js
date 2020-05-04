@@ -103,8 +103,6 @@ var choiceClock;
 var Choice;
 var choice_fix;
 var key_resp_2;
-var nReps;
-var nReps2;
 var timeout_msgClock;
 var timeout_text;
 var key_resp_4;
@@ -271,9 +269,6 @@ function experimentInit() {
     texRes : 128, interpolate : true, depth : -1.0 
   });
   key_resp_2 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
-  
-  nReps = 0;
-  nReps2 = 1;
   
   // Initialize components for Routine "timeout_msg"
   timeout_msgClock = new util.Clock();
@@ -569,9 +564,6 @@ function experimentInit() {
     texRes : 128, interpolate : true, depth : -1.0 
   });
   key_resp_2 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
-  
-  nReps = 0;
-  nReps2 = 1;
   
   // Initialize components for Routine "timeout_msg"
   timeout_msgClock = new util.Clock();
@@ -1550,6 +1542,8 @@ function stim_presentation2RoutineEnd(trials) {
 
 
 var _key_resp_2_allKeys;
+var nReps;
+var nReps2;
 var choiceComponents;
 function choiceRoutineBegin(trials) {
   return function () {
@@ -1563,6 +1557,9 @@ function choiceRoutineBegin(trials) {
     key_resp_2.keys = undefined;
     key_resp_2.rt = undefined;
     _key_resp_2_allKeys = [];
+    nReps = 0;
+    nReps2 = 1;
+    
     // keep track of which components have finished
     choiceComponents = [];
     choiceComponents.push(Choice);
