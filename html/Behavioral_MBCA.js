@@ -1822,7 +1822,7 @@ function long_delayRoutineBegin(trials) {
     t = 0;
     long_delayClock.reset(); // clock
     frameN = -1;
-    routineTimer.add(1.000000);
+    routineTimer.add(6.000000);
     // update component parameters for each repeat
     fix3.setImage(imageFix);
     // keep track of which components have finished
@@ -1856,7 +1856,7 @@ function long_delayRoutineEachFrame(trials) {
       fix3.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 1 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + 6 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (fix3.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       fix3.setAutoDraw(false);
     }
