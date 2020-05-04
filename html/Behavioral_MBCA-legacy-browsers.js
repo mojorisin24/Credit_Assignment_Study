@@ -415,7 +415,7 @@ function experimentInit() {
     text: 'default text',
     font: 'Arial',
     units: undefined, 
-    pos: [0, 0.3], height: 0.05,  wrapWidth: undefined, ori: 0,
+    pos: [0, 0.25], height: 0.08,  wrapWidth: undefined, ori: 0,
     color: new util.Color('black'),  opacity: 1,
     depth: -2.0 
   });
@@ -710,7 +710,7 @@ function experimentInit() {
     text: points_total,
     font: 'Arial',
     units: undefined, 
-    pos: [0, 0.3], height: 0.05,  wrapWidth: undefined, ori: 0,
+    pos: [0, 0.25], height: 0.08,  wrapWidth: undefined, ori: 0,
     color: new util.Color('black'),  opacity: 1,
     depth: -2.0 
   });
