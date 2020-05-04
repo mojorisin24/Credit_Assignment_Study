@@ -695,7 +695,7 @@ function experimentInit() {
   block1_points = new visual.TextStim({
     win: psychoJS.window,
     name: 'block1_points',
-    text: points_total,
+    text: b1_total,
     font: 'Arial',
     units: undefined, 
     pos: [0, 0.25], height: 0.08,  wrapWidth: undefined, ori: 0,
